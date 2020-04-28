@@ -1,0 +1,7 @@
+.user{
+    font-weight: 600;
+}
+
+.user:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.bg-company-blue {
+    background-color: rgb(12, 120, 155) !important;
+    color: #fff;
+    border-radius: 25%
+}
+
+.create-div{
+    max-width: 90;
+    min-height: 10%;
+    max-height: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    border-radius: 1%;
+}

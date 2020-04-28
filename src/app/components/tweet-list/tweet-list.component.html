@@ -1,0 +1,4 @@
+<app-create-tweet></app-create-tweet>
+<div *ngFor = "let tweet of tweets" class="list-tweets">
+    <app-tweet [tweet]="tweet"></app-tweet>
+</div>

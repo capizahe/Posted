@@ -1,0 +1,23 @@
+<div class="signup">
+<form>
+    <h4 class="text-center"> ¡Registrate!</h4>
+    <div class = "form-group">
+        <label for ="inputNameId">Primer nombre:</label>
+        <input type="text" class="form-control" id="inputNameId" placeholder="Ingrese nombre" [(ngModel)]="user.nombre" name="name" >
+    </div>
+    <div class="form-group">
+        <label for = lastNameid>Primer Apellido</label>
+        <input type="text" class="form-control" id="lastNameid" placeholder="Ingrese Apellido" [(ngModel)]="user.apellido" name="surname">
+    </div>
+    <div class="form-group">
+            <label for="exampleInputEmail1">Correo electronico:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Correo" [(ngModel)]="user.email"name="email">
+            <small id="emailHelp" class="form-text text-muted">NO compartiremos tu email con terceros.</small>
+    </div>
+    <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" [(ngModel)]="user.contrasena" name="exampleInputPassword1">
+    </div>   
+</form>
+<button type="submit" class="btn btn-lg btn-block bg-company-blue font-weight-bold" (click)="addUser()">Registrate</button>
+</div>

@@ -1,0 +1,9 @@
+
+<div class=profile>
+<label class=profile-title> TU PERFIL 😎</label>
+<label class=profile-name>{{user.nombre}} {{user.apellido}}</label>
+</div>
+
+<div *ngFor = "let tweet of tweets" class="list-tweets">
+    <app-tweet [tweet]="tweet"></app-tweet>
+</div>

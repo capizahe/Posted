@@ -1,0 +1,20 @@
+<div class="card login mt-5">
+    <div class="card-header text-center bg-company-blue">
+        <h4 class="text-light font-weight-bold " style="font-size:2.5rm">Sign in</h4>
+    </div>
+    <div class="card-body">
+        <form #login="ngForm">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                        <input type="text" class="form-control" placeholder="Correo electronico" aria-label="email" aria-describedby="basic-addon1" [(ngModel)]="email" name = "email"autocomplete="off">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1" [(ngModel)]="password" name = "password"autocomplete="off">
+                </div>
+        </form>
+        <label class="form-text text-muted" (click)="onCreateAccount()">¿Aún no has creado una cuenta? <label class="ref">Registrate aquí.</label></label>
+        <button class="btn btn-lg btn-block bg-company-blue font-weight-bold" type="submit" (click)='onLogin()'>Entrar</button>
+    </div>
+</div>

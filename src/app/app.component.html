@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-company-blue">
+  <a class="navbar-brand" routerLink="/tweets">
+    <img src="assets/chill-icon.png" alt="twitter logo" width="50" height="50" class="d-inline-block align-top" >
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse align-middle" id="navbarSupportedContent">
+    <ul class="nav mr-auto">
+      
+      <li class="nav-item active " data-toggle="collapse" data-target=".navbar-collapse.show" *ngIf="!signedIn()">
+            <a class="nav-link align-middle" routerLink="/login" data-toggle="collapse" >
+               <p class="text-white font-weight-bold ">Inicia Sesión</p>
+            </a>
+        </li>
+      <li class="nav-item active"  data-toggle="collapse" data-target=".navbar-collapse.show" *ngIf="signedIn()">
+        <a class="nav-link" routerLink="/tweets">
+           <p class="text-white font-weight-bold">Inicio</p>
+        </a>
+      </li>
+      <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show" *ngIf="signedIn()">
+        <a class="nav-link" routerLink="/myposts">
+           <p class="text-white font-weight-bold">Mio</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="signedIn()" (click)="logout()">
+          <p class="text-white font-weight-bold">Salir</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,8 @@
+.signup{
+    padding-left: 20%; padding-right: 20%; padding-top: 5%; padding-bottom: 20%;
+    margin:auto;
+}
+.bg-company-blue {
+    background-color: rgb(12, 120, 155) !important;
+    color: #fff;
+}

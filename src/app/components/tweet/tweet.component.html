@@ -1,0 +1,14 @@
+<div class="card tweet">
+    <div class="card-header text-muted text-left">
+             <span class="user" (click)="getInfo()">{{tweet?.correo}}</span>
+             <span *ngIf="isOwner(tweet?.correo)" class="card-header text-muted float-right" (click)="removeTweet(tweet.$key)">x</span>
+    </div>
+
+    <div class="card-body">
+        <p class=card-text>{{tweet.descripcion}}</p>
+    </div>
+     <div class="card-footer text-muted text-center">
+            {{tweet.fecha}}
+    </div>
+
+</div>

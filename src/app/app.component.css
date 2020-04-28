@@ -1,0 +1,10 @@
+.bg-company-blue {
+    background-color: rgb(12, 120, 155) !important;
+    color: #fff;
+}
+body{
+    background-color:black;
+}
+hover :hover{
+    background-color: rgb(12, 120, 188)
+}
